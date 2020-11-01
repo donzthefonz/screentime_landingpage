@@ -1,6 +1,10 @@
 import React from "react";
 import axios from "axios";
-import { AccessAlarm, HourglassEmpty,Timer,  Devices, CheckCircleOutline,  Lock} from '@material-ui/icons';
+import { AccessAlarm, HourglassEmpty,Timer,  Devices, CheckCircleOutline,  Lock, SportsKabaddi, Favorite } from '@material-ui/icons';
+import { FaPeace, FaClock, FaRegAngry } from "react-icons/fa";
+import { MdFavoriteBorder, MdSentimentSatisfied, MdAccessTime } from "react-icons/md";
+import { GiMeditation } from "react-icons/gi";
+
 
 const BASE_URL =
   "https://my-json-server.typicode.com/lhmisho/jsonserver/themeOnePromoSection";
@@ -12,30 +16,30 @@ let initData =  [
       "heading": "Healthy Children",
       "content": "Limit time on screens. Enable a balanced lifestyle.",
       "iconClass": "ti-vector",
-      "icon": "time"
+      "icon": "health"
 
     },
     {
       "id": 2,
-      "heading": "Less Fights",
-      "content": "Let your kids hate Parengo, not you.",
+      "heading": "Less Fighting",
+      "content": "Parengo handles the dirty work so you don't have to.",
       "iconClass": "ti-headphone-alt",
-      "icon": "task"
+      "icon": "fight"
 
     },
     {
       "id": 3,
       "heading": "Peace of Mind",
-      "content": "Cross platform. Mobile, Windows, PS4 and Xbox.",
+      "content": "With more cooperation from children, life becomes calmer.",
       "iconClass": "mdi mdi-golf-cart",
-      "icon": "device"
+      "icon": "peace"
     },
     {
       "id": 4,
-      "heading": "  ",
-      "content": "  ",
+      "heading": "Family Time",
+      "content": "More time with your family doing the things you love best.",
       "iconClass": "ti-headphone-alt",
-      "icon": "lock"
+      "icon": "clock"
 
     }
   ]
@@ -84,10 +88,10 @@ class PromoSection extends React.Component {
                     <div key={`s_${idx}`} className="col-md-3 col-sm-6">
                       <div className="bg-secondary single-promo-section text-center">
                         <div className="single-promo-content">
-                          {item.icon === 'time' && <HourglassEmpty></HourglassEmpty>}
-                          {item.icon === 'device' && <Devices></Devices>}
-                          {item.icon === 'task' && <CheckCircleOutline></CheckCircleOutline>}
-                          {item.icon === 'lock' && <Lock></Lock>}
+                          {item.icon === 'health' && <MdFavoriteBorder size="30"></MdFavoriteBorder>}
+                          {item.icon === 'fight' && <FaRegAngry size="26" ></FaRegAngry>}
+                          {item.icon === 'peace' && <MdSentimentSatisfied size="30" ></MdSentimentSatisfied>}
+                          {item.icon === 'clock' && <MdAccessTime size="30"></MdAccessTime>}
                           <h6>{item.heading}</h6>
                           <p>{item.content}</p>
                         </div>
