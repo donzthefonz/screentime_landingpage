@@ -9,31 +9,31 @@ const BASE_URL =
 let initData =  [
     {
       "id": 1,
-      "heading": "Limit Screen Time",
-      "content": "Set a daily screen time allowance for your child.",
+      "heading": "Healthy Children",
+      "content": "Limit time on screens. Enable a balanced lifestyle.",
       "iconClass": "ti-vector",
       "icon": "time"
 
     },
     {
       "id": 2,
-      "heading": "Improve Behaviour",
-      "content": "Set tasks like homework and allow kids to earn more time.",
+      "heading": "Less Fights",
+      "content": "Let your kids hate Parengo, not you.",
       "iconClass": "ti-headphone-alt",
       "icon": "task"
 
     },
     {
       "id": 3,
-      "heading": "Multi Device",
+      "heading": "Peace of Mind",
       "content": "Cross platform. Mobile, Windows, PS4 and Xbox.",
       "iconClass": "mdi mdi-golf-cart",
       "icon": "device"
     },
     {
       "id": 4,
-      "heading": "Unbreakable",
-      "content": "Unlike other apps, your child can't uninstall this one.",
+      "heading": "  ",
+      "content": "  ",
       "iconClass": "ti-headphone-alt",
       "icon": "lock"
 
