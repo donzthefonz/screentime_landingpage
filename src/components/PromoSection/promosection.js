@@ -46,10 +46,12 @@ let initData =  [
 
   const missionData = {
     'title': 'Our Mission',
-    'contentP1': 'Parengo is here to help parents ensure their kids are discovering all that childhood has to offer, online and off. The Parengo app provides simple monitoring and management tools to achieve a happy balance… argument free!',
-    'contentP2': 'As a parent, it’s important to know and understand what your children are up to in order to guide them, to be a parent to them.',
-    'contentP3': 'Incredibly, children are spending over 7 hours a day on their smartphones, this is significantly more than the recommended healthy amount of 2 hours.',
-    'contentP4': 'This technology revolution has brought some incredible benefits to us all, but an excess of anything can be unhealthy.'
+    'content': `Our goal is to enable parents to help their children have a healthy childhood and uncover their potential.
+    We do this through a platform, built in collaboration with researchers, to reduce time spent on digital devices for entertainment in a way that facilitates understanding and encourages good behaviour both online and offline! Children are required to earn the minutes they want to spend on entertainment by accomplishing tasks and developing habits, whether that’s achieving a streak of brushing their teeth, completing an online class or practicing their musical instrument for an hour.`,
+    'contentP1': 'Our goal is to enable parents to help their children have a healthy childhood and uncover their potential.',
+    'contentP2': 'We do this through a platform, built in collaboration with researchers, to reduce time spent on digital devices for entertainment in a way that facilitates understanding and encourages good behaviour both online and offline!',
+    'contentP3': 'Children have a daily minutes allowance, set by you, that allow them to play games, scroll social media, watch YouTube videos, etc.',
+    'contentP4': 'But if they want more than that, they must earn the minutes they want to spend on entertainment by accomplishing tasks and developing habits, whether that’s achieving a streak of brushing their teeth, completing an online class or practicing their musical instrument for an hour.'
 
   }
 
@@ -107,8 +109,10 @@ class PromoSection extends React.Component {
         <section id="mission" className="faq-section ptb-90">
         <div className="row">
             <div className="col-md-12">
-                <div className="section-heading text-center">
-                    <h3>{this.state.missionData.title}</h3>
+                <div className="section-heading">
+                    <div className="text-center">
+                      <h3>{this.state.missionData.title}</h3>
+                    </div>
                     <p>{this.state.missionData.contentP1}</p>
                     <p>{this.state.missionData.contentP2}</p>
                     <p>{this.state.missionData.contentP3}</p>
