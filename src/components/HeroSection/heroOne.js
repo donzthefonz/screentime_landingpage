@@ -1,5 +1,9 @@
 import React from "react";
 import {appName} from '../../constants'
+import MailchimpSubscribe from "react-mailchimp-subscribe"
+const url = "https://gmail.us2.list-manage.com/subscribe/post?u=5f3611d15bda0115be9f88bd4&amp;id=9bcf244908";
+const SimpleForm = () => <MailchimpSubscribe url={url}/>
+
 
 let initData ={
   // heading: appName + " - The Parenting App",
@@ -92,7 +96,9 @@ class HeroSection extends React.Component {
                   <div className="hero-content">
                     <h1>{this.state.initData.heading}</h1>
                     <p>{this.state.initData.content}</p>
-                    <div className="slider-action-btn">
+                    <h3 style={{marginTop: "100px", marginBottom: "20px"}}>Subscribe for Updates</h3>
+                    <SimpleForm></SimpleForm>
+                    {/* <div className="slider-action-btn">
                       {this.state.sliderData.map((data, idx) => {
                         return (
                           <a key={`sk_${idx}`} href={data.link} className={data.btnClass}> 
@@ -100,7 +106,7 @@ class HeroSection extends React.Component {
                           </a>
                         );
                       })}
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

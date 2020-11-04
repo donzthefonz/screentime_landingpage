@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import MailchimpSubscribe from "react-mailchimp-subscribe"
+const url = "https://gmail.us2.list-manage.com/subscribe/post?u=5f3611d15bda0115be9f88bd4&amp;id=9bcf244908";
+const SimpleForm = () => <MailchimpSubscribe url={url}/>
 
 
 class ContactForm extends Component {
@@ -44,6 +47,7 @@ class ContactForm extends Component {
           className="contact-us-form"
           noValidate="novalidate"
         >
+          {/* <h6>Get updates from us</h6> */}
           <h6>Reach us quickly</h6>
           <div className="row">
             <div className="col-sm-6 col-xs-12">
@@ -75,7 +79,7 @@ class ContactForm extends Component {
               </div>
             </div>
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="col-sm-6 col-xs-12">
               <div className="form-group">
                 <input
@@ -103,7 +107,7 @@ class ContactForm extends Component {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="row">
             <div className="col-xs-12">
               <div className="form-group">
@@ -126,6 +130,7 @@ class ContactForm extends Component {
                 type="submit"
                 className="btn softo-solid-btn pull-right"
                 id="btnContactUs"
+                onClick
               >
                 Send Message
               </button>
