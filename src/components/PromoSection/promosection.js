@@ -4,6 +4,7 @@ import { AccessAlarm, HourglassEmpty,Timer,  Devices, CheckCircleOutline,  Lock,
 import { FaPeace, FaClock, FaRegAngry } from "react-icons/fa";
 import { MdFavoriteBorder, MdSentimentSatisfied, MdAccessTime } from "react-icons/md";
 import { GiMeditation } from "react-icons/gi";
+import { BiRocket } from "react-icons/bi";
 
 
 const BASE_URL =
@@ -29,10 +30,10 @@ let initData =  [
     },
     {
       "id": 3,
-      "heading": "Peace of Mind",
-      "content": "With more cooperation from children, life becomes calmer.",
+      "heading": "Child Development",
+      "content": "Encourage learning and uncover your child's potential.",
       "iconClass": "mdi mdi-golf-cart",
-      "icon": "peace"
+      "icon": "development"
     },
     {
       "id": 4,
@@ -91,8 +92,8 @@ class PromoSection extends React.Component {
                       <div className="bg-secondary single-promo-section text-center">
                         <div className="single-promo-content">
                           {item.icon === 'health' && <MdFavoriteBorder size="30"></MdFavoriteBorder>}
-                          {item.icon === 'fight' && <FaRegAngry size="26" ></FaRegAngry>}
-                          {item.icon === 'peace' && <MdSentimentSatisfied size="30" ></MdSentimentSatisfied>}
+                          {item.icon === 'fight' && <MdSentimentSatisfied size="30" ></MdSentimentSatisfied>}
+                          {item.icon === 'development' && <BiRocket size="30" ></BiRocket>}
                           {item.icon === 'clock' && <MdAccessTime size="30"></MdAccessTime>}
                           <h6>{item.heading}</h6>
                           <p>{item.content}</p>
