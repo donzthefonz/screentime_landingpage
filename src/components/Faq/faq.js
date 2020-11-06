@@ -11,23 +11,25 @@ const data = {
     "data": [
       {
         "id": 1,
-        "question": "Is this an awesome app?",
-        "answer": "Yes."
+        "question": "Why can't I download the app?",
+        "answer": "We are currently in the closed beta stage. This means the app is not available to the public and you must be invited to be an early-access user. Leave us your email and you might get lucky."
       },
       {
         "id": 2,
-        "question": "User Interface Design ?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros.,"
+        "question": "Will I have to actively engage with this app to make use of it?",
+        "answer": `As a parent you have two options in how you use this app.
+                    The first is passively, where you set the daily screen time limits and can then forget about the app. Only the child will have to engage with it.
+                    The second is active engagement where as well as setting limits you actively set tasks and activities for your kids. Your kids see these challenges and complete them in return for more screen time.`
       },
       {
         "id": 3,
-        "question": "Cross Browser Support ?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros.,"
+        "question": "What devices do you support?",
+        "answer": "At the moment we support Android, Windows Computers and games consoles such as PS4 and Xbox. With the new PS5 and Series X supported as well. We plan to support iPhone, iPad and other devices in the future. Get in touch to tell us what you'd like to see most!"
       },
       {
         "id": 4,
-        "question": "User Experience Design ?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros.,"
+        "question": "Do I have to pay extra for games console support?",
+        "answer": "Yes, in order to support games consoles within our platform there is a neccessary hardware component. We charge a one time £20 fee for the device."
       }
     ]
   }

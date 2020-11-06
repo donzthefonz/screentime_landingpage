@@ -1964,6 +1964,10 @@ SECTION MARGIN
      06. PROMO SECTION CSS
 ==============================*/
 .single-promo-section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
     background: #fff;
     display: block;
     border-radius: 4px;

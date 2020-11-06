@@ -9,7 +9,7 @@ const BASE_URL = "https://my-json-server.typicode.com/lhmisho/jsonserver/themeOn
 
 const data = {
     "content": "The parenting app that let's you limit screen time and incentivise good behaviour for your child. Equips you with the tools to help you, help them.",
-    "heading": appName + " Features",
+    "heading": "Features",
     "image": "/img/feature-image.png",
     "featureDataOne": [
       {

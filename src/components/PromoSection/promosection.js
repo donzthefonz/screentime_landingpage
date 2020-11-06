@@ -1,10 +1,11 @@
 import React from "react";
 import axios from "axios";
 import { AccessAlarm, HourglassEmpty,Timer,  Devices, CheckCircleOutline,  Lock, SportsKabaddi, Favorite } from '@material-ui/icons';
-import { FaPeace, FaClock, FaRegAngry } from "react-icons/fa";
-import { MdFavoriteBorder, MdSentimentSatisfied, MdAccessTime } from "react-icons/md";
+import { FaPeace, FaClock, FaRegAngry, FaBalanceScale } from "react-icons/fa";
+import { MdFavoriteBorder, MdSentimentSatisfied, MdAccessTime, MdThumbUp } from "react-icons/md";
 import { GiMeditation } from "react-icons/gi";
 import { BiRocket } from "react-icons/bi";
+import { BsFillBarChartFill } from "react-icons/bs";
 
 
 const BASE_URL =
@@ -44,22 +45,50 @@ let initData =  [
 
     }
   ]
-
+  // 'contentOL1': `One platform for your child’s digital supervision, progression and healthy development.`,
+  // 'contentOL2': `Like a parental control app, but better.`,
+// in a world with 21st century problems, we need 21st century tools and solutions.
+// One platform for monitoring, protecting and guiding all of your child's digital activities. From gaming to social media, we need a 21st century tool for 21st century problems. It's like a parental control app, but better.
   const missionData = {
     'title': 'Our Mission',
-    'content': `Our goal is to enable parents to help their children have a healthy childhood and uncover their potential.
-    We do this through a platform, built in collaboration with researchers, to reduce time spent on digital devices for entertainment in a way that facilitates understanding and encourages good behaviour both online and offline! Children are required to earn the minutes they want to spend on entertainment by accomplishing tasks and developing habits, whether that’s achieving a streak of brushing their teeth, completing an online class or practicing their musical instrument for an hour.`,
-    'contentP1': 'Our goal is to enable parents to help their children have a healthy childhood and uncover their potential.',
-    'contentP2': 'We do this through a platform, built in collaboration with researchers, to reduce time spent on digital devices for entertainment in a way that facilitates understanding and encourages good behaviour both online and offline!',
-    'contentP3': 'Children have a daily minutes allowance, set by you, that allow them to play games, scroll social media, watch YouTube videos, etc.',
-    'contentP4': 'But if they want more than that, they must earn the minutes they want to spend on entertainment by accomplishing tasks and developing habits, whether that’s achieving a streak of brushing their teeth, completing an online class or practicing their musical instrument for an hour.'
+    'contentOL1': `One platform for managing your child’s screen time and incentivising positive behaviour.`,
+    'contentOL2': `Like a parental control app, but better.`,
+    'contentP1': `Our Three Goals`,
+    'contentP2': `We do this through a platform that helps to reduce time spent on digital devices.
+    Children have a daily minutes allowance, set by you, that allow them to play games, scroll through social media, watch YouTube videos, etc.
+    `,
+    'contentP3': `If they want more screen time, they must earn more minutes by completing tasks and developing habits. This gives you leverage to set goals for your child and have them directly incentivised towards them.`,
+    'contentP4': `Those goals can be anything from brushing their teeth everyday, completing an online class to washing the dishes or practising their musical instrument.`,
+    'goals':  [
+      {
+        "id": 1,
+        "heading": "Make Parenting Easier",
+        "content": "Limit time on screens. Enable a balanced lifestyle.",
+        "icon": "thumb"
+  
+      },
+      {
+        "id": 2,
+        "heading": "Enable a Balanced Lifestyle",
+        "content": "Parengo handles the dirty work so you don't have to.",
+        "icon": "balance"
+  
+      },
+      {
+        "id": 3,
+        "heading": "Maximise Your Child's Potential",
+        "content": "Encourage learning and uncover your child's potential.",
+        "icon": "chart"
+      }
+    ]
 
   }
 
 class PromoSection extends React.Component {
   state = {
     data: [],
-    missionData: {}
+    missionData: {},
+    goals: []
   };
 
   componentDidMount() {
@@ -74,7 +103,8 @@ class PromoSection extends React.Component {
     //   .catch(err => console.log(err));
     this.setState({
       data: initData,
-      missionData: missionData
+      missionData: missionData,
+      goals: missionData.goals
     })
   }
 
@@ -114,10 +144,33 @@ class PromoSection extends React.Component {
                     <div className="text-center">
                       <h2>{this.state.missionData.title}</h2>
                     </div>
-                      <p style={{maxWidth:"1000px", fontWeight:"normal", fontSize:"20px"}}>
-                        <p style={{maxWidth:"1000px"}}>{this.state.missionData.contentP1}</p>
+                      <p style={{maxWidth:"1000px", fontWeight:"normal", fontSize:"20px", textAlign: "center"}}>
+                      <p style={{maxWidth:"1000px", fontWeight:"bold", textAlign: "center", marginTop: "40px"}}>{this.state.missionData.contentOL1}</p>
+                      <p style={{maxWidth:"1000px", fontWeight:"bold", textAlign: "center", marginTop:"10px", marginBottom: "40px"}}>{this.state.missionData.contentOL2}</p>
                         <p></p>
                         <p></p>
+                        <h4 style={{maxWidth:"1000px", marginBottom: "10px"}}>{this.state.missionData.contentP1}</h4>
+                      </p>
+                      <div className="container">
+                        <div className="row">
+                          {this.state.goals.map((item, idx) => {
+                            return (
+                              <div key={`s_${idx}`} className="col-md-4 col-sm-6">
+                                <div className="bg-secondary single-promo-section text-center">
+                                  <div className="single-promo-content">
+                                    {item.icon === 'thumb' && <MdThumbUp size="30"></MdThumbUp>}
+                                    {item.icon === 'balance' && <FaBalanceScale size="30" ></FaBalanceScale>}
+                                    {item.icon === 'chart' && <BsFillBarChartFill size="30" ></BsFillBarChartFill>}
+                                    <h6>{item.heading}</h6>
+                                  </div>
+                                  <div className="line"></div>
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                      <p style={{maxWidth:"1000px", fontWeight:"normal", fontSize:"1.2rem", textAlign: "center", marginTop:"10px", marginBottom: "40px"}}>
                         <p style={{maxWidth:"1000px"}}>{this.state.missionData.contentP2}</p>
                         <p></p>
                         <p></p>
