@@ -1,6 +1,14 @@
 import React from "react";
 import {appName} from '../../constants'
 import MailchimpSubscribe from "react-mailchimp-subscribe"
+
+import { AccessAlarm, HourglassEmpty,Timer,  Devices, CheckCircleOutline,  Lock, SportsKabaddi, Favorite } from '@material-ui/icons';
+import { FaPeace, FaClock, FaRegAngry, FaBalanceScale } from "react-icons/fa";
+import { MdFavoriteBorder, MdSentimentSatisfied, MdAccessTime, MdThumbUp } from "react-icons/md";
+import { GiMeditation } from "react-icons/gi";
+import { BiRocket } from "react-icons/bi";
+import { BsFillBarChartFill } from "react-icons/bs";
+
 const url = "https://gmail.us2.list-manage.com/subscribe/post?u=5f3611d15bda0115be9f88bd4&amp;id=9bcf244908";
 const SimpleForm = () => <MailchimpSubscribe url={url}/>
 
@@ -43,12 +51,46 @@ let phoneImage = [
   { image: "/img/top-screen-8.png" }
 ];
 
+let benefitsData =  [
+  {
+    "id": 1,
+    "heading": "Healthy Children",
+    "content": "Limit time on screens. Enable a balanced lifestyle.",
+    "iconClass": "ti-vector",
+    "icon": "health"
+
+  },
+  {
+    "id": 2,
+    "heading": "Less Fighting",
+    "content": "Parengo handles the dirty work so you don't have to.",
+    "iconClass": "ti-headphone-alt",
+    "icon": "fight"
+
+  },
+  {
+    "id": 3,
+    "heading": "Child Development",
+    "content": "Encourage learning and uncover your child's potential.",
+    "iconClass": "mdi mdi-golf-cart",
+    "icon": "development"
+  },
+  {
+    "id": 4,
+    "heading": "Family Time",
+    "content": "More time with your family doing the things you love best.",
+    "iconClass": "ti-headphone-alt",
+    "icon": "clock"
+
+  }
+];
 class HeroSection extends React.Component {
   // noinspection JSAnnotator
   state = {
     initData: {},
     sliderData: [],
-    phoneImage: []
+    phoneImage: [],
+    benefits: []
   };
   componentDidMount() {
 
@@ -66,7 +108,8 @@ class HeroSection extends React.Component {
     this.setState({
       initData: initData,
       sliderData: slider_action_data,
-      phoneImage: phoneImage
+      phoneImage: phoneImage,
+      benefits: benefitsData
     })
   }
 
@@ -109,6 +152,31 @@ class HeroSection extends React.Component {
                     </div> */}
                   </div>
                 </div>
+                {/* <section className="promo-section ptb-90">
+                  <div className="promo-section-wrap">
+                    <div className="container">
+                      <div className="row">
+                        {this.state.benefits.map((item, idx) => {
+                          return (
+                            <div key={`s_${idx}`} className="col-md-3 col-sm-6">
+                              <div className="bg-secondary single-promo-section text-center">
+                                <div className="single-promo-content">
+                                  {item.icon === 'health' && <MdFavoriteBorder size="30"></MdFavoriteBorder>}
+                                  {item.icon === 'fight' && <MdSentimentSatisfied size="30" ></MdSentimentSatisfied>}
+                                  {item.icon === 'development' && <BiRocket size="30" ></BiRocket>}
+                                  {item.icon === 'clock' && <MdAccessTime size="30"></MdAccessTime>}
+                                  <h6>{item.heading}</h6>
+                                  <p>{item.content}</p>
+                                </div>
+                                <div className="line"></div>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                </section> */}
               </div>
               <div className="col-md-4">
                 <div className="mobile-slider-area">
