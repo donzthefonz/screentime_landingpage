@@ -1,4 +1,11 @@
 import React from "react";
+import {appName} from '../../constants'
+import MailchimpSubscribe from "react-mailchimp-subscribe"
+import Mailchimp from 'react-mailchimp-form'
+
+const url = "https://gmail.us2.list-manage.com/subscribe/post?u=5f3611d15bda0115be9f88bd4&amp;id=9bcf244908";
+const SimpleForm = () => <MailchimpSubscribe url={url}/>
+
 
 let bg = "/img/hero-section-bg-2.jpg";
 let bgCss = "no-repeat center center / cover";
@@ -10,7 +17,7 @@ let initData = {
   heading: "ApeTech Provide -",
   content:
     "Our software platform and custom development allow healthcare institutions to create comprehensive cross-platform solutions that ensure positive patient experiences.",
-  heroImage: "/img/faq-right.png",
+  heroImage: "/img/kids_group_3.png",
   actionShapeImage: "/img/shape-bg.png"
 };
 
@@ -56,9 +63,36 @@ class HeroSection extends React.Component {
                             <div className="col-md-6">
                                 <div className="hero-content-wrap">
                                     <div className="hero-content typed-strings">
-                                        <h1> {this.state.initData.heading}<br /> <span className="typed"></span> </h1>
-                                        <p>{this.state.initData.content}</p>
+                                      <img src={"/img/parengo_logo.png"} alt="logo" style={{maxWidth: '500px'}}/>
+                                        <h1> Parenting just got easier.<br /> </h1>
                                         <div className="slider-action-btn">
+                                          <Mailchimp
+                                              action={url}
+
+                                              //Adding multiple fields:
+                                              fields={[
+                                                {
+                                                  name: 'EMAIL',
+                                                  placeholder: 'Email',
+                                                  type: 'email',
+                                                  required: true
+                                                }
+                                              ]}
+                                              // Change predetermined language
+                                              messages = {
+                                                {
+                                                  sending: "Sending...",
+                                                  success: "You've subscribed!",
+                                                  error: "An unexpected internal error has occurred.",
+                                                  empty: "You must enter an e-mail address.",
+                                                  duplicate: "You've already subscribed.",
+                                                  button: "Subscribe!"
+                                                }
+                                              }
+                                              // Add a personalized class
+                                              className='subscribeForm'
+                                          />
+
                                             {this.state.sliderData.map((item, idx) => {
                                                 return(
                                                     <a key={`sl_${idx}`} href={item.link} className="btn btn-icon">
@@ -66,15 +100,12 @@ class HeroSection extends React.Component {
                                                     </a>
                                                 )
                                             })}
-                                            <a href="https://www.youtube.com/watch?v=LV3cjaA7NtE" className="video">
-                                                <span className="ti-control-play"></span>
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-6">
-                                <div className="hero-image">
+                                <div >
                                     <img src={this.state.initData.heroImage} alt="" className="img-responsive" />
                                 </div>
                             </div>

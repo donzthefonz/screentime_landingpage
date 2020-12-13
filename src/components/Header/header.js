@@ -18,8 +18,8 @@ const Header = () => {
                                     <span className="icon-bar"></span>
                                 </button>
                                 <a className="navbar-brand page-scroll" href="/">
-                                    {/* <img src={"/img/logo.png"} alt="logo" /> */}
-                                    <h2 style={{color:'white'}}>Parengo</h2>
+                                     <img src={"/img/parengo_logo_header.png"} alt="logo" />
+                                    {/*<h2 style={{color:'white'}}>Parengo</h2>*/}
                                 </a>
                             </div>
 

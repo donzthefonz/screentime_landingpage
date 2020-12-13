@@ -19,10 +19,10 @@ class MyRouts extends React.Component {
       <div>
         <Router>
           <Switch>
-            <Route exact path="/" component={ThemeOne} />
+            <Route exact path="/theme-one" component={ThemeOne} />
             <Route exact path="/theme-two/" component={ThemeTwo} />
             <Route exact path="/theme-three/" component={ThemeThree} />
-            <Route exact path="/theme-four/" component={ThemeFour} />
+            <Route exact path="/" component={ThemeFour} />
             <Route exact path="/theme-five/" component={ThemeFive} />
             <Route exact path="/theme-six/" component={ThemeSix} />
             <Route exact path="/theme-seven/" component={ThemeSeven} />
