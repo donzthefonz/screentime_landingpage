@@ -141,14 +141,8 @@ class PromoSection extends React.Component {
         <div className="row">
             <div className="col-md-12">
                 <div className="section-heading">
-                    <div className="text-center">
-                      <h2>{this.state.missionData.title}</h2>
-                    </div>
                       <p style={{maxWidth:"1000px", fontWeight:"normal", fontSize:"20px", textAlign: "center"}}>
-                      <p style={{maxWidth:"1000px", fontWeight:"bold", textAlign: "center", marginTop: "40px"}}>{this.state.missionData.contentOL1}</p>
-                      <p style={{maxWidth:"1000px", fontWeight:"bold", textAlign: "center", marginTop:"10px", marginBottom: "40px"}}>{this.state.missionData.contentOL2}</p>
-                        <p></p>
-                        <p></p>
+
                         <h4 style={{maxWidth:"1000px", marginBottom: "15px"}}>{this.state.missionData.contentP1}</h4>
                       </p>
                       <div className="container">

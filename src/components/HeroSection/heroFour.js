@@ -18,7 +18,7 @@ let initData = {
   content:
     "Our software platform and custom development allow healthcare institutions to create comprehensive cross-platform solutions that ensure positive patient experiences.",
   heroImage: "/img/kids_group_3.png",
-  actionShapeImage: "/img/shape-bg.png"
+  actionShapeImage: "/img/shape-bg-custom.png"
 };
 
 let slider_action_data = [
@@ -63,9 +63,16 @@ class HeroSection extends React.Component {
                             <div className="col-md-6">
                                 <div className="hero-content-wrap">
                                     <div className="hero-content typed-strings">
-                                      <img src={"/img/parengo_logo.png"} alt="logo" style={{maxWidth: '500px'}}/>
+                                      {/*<img src={"/img/parengo_logo.png"} alt="logo" style={{maxWidth: '400px'}}/>*/}
                                         <h1> Parenting just got easier.<br /> </h1>
-                                        <div className="slider-action-btn">
+                                      <p>
+                                        Manage your child’s screen time and incentivise positive behaviour. <br/> Like a parental control app, but better!
+                                      </p>
+
+                                      <p style={{paddingBottom: 0}}>
+                                        Be notified as soon as we launch!
+                                      </p>
+
                                           <Mailchimp
                                               action={url}
 
@@ -92,15 +99,15 @@ class HeroSection extends React.Component {
                                               // Add a personalized class
                                               className='subscribeForm'
                                           />
-
-                                            {this.state.sliderData.map((item, idx) => {
-                                                return(
-                                                    <a key={`sl_${idx}`} href={item.link} className="btn btn-icon">
-                                                        <i className={item.faClass}></i>
-                                                    </a>
-                                                )
-                                            })}
-                                        </div>
+                                      {/*<div className="slider-action-btn">*/}
+                                      {/*      {this.state.sliderData.map((item, idx) => {*/}
+                                      {/*          return(*/}
+                                      {/*              <a key={`sl_${idx}`} href={item.link} className="btn btn-icon">*/}
+                                      {/*                  <i className={item.faClass}></i>*/}
+                                      {/*              </a>*/}
+                                      {/*          )*/}
+                                      {/*      })}*/}
+                                      {/*  </div>*/}
                                     </div>
                                 </div>
                             </div>

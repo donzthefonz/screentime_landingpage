@@ -139,6 +139,7 @@ class HeroSection extends React.Component {
                   <div className="hero-content">
                     <h1>{this.state.initData.heading}</h1>
                     <p>{this.state.initData.content}</p>
+
                     <h3 style={{marginTop: "100px", marginBottom: "20px"}}>Subscribe for Updates</h3>
                     <SimpleForm></SimpleForm>
                     {/* <div className="slider-action-btn">
