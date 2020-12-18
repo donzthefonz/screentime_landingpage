@@ -15,14 +15,6 @@ const BASE_URL =
 let initData =  [
     {
       "id": 1,
-      "heading": "Healthy Children",
-      "content": "Limit time on screens. Enable a balanced lifestyle.",
-      "iconClass": "ti-vector",
-      "icon": "health"
-
-    },
-    {
-      "id": 2,
       "heading": "Less Fighting",
       "content": "Parengo handles the dirty work so you don't have to.",
       "iconClass": "ti-headphone-alt",
@@ -30,14 +22,14 @@ let initData =  [
 
     },
     {
-      "id": 3,
+      "id": 2,
       "heading": "Child Development",
       "content": "Encourage learning and uncover your child's potential.",
       "iconClass": "mdi mdi-golf-cart",
       "icon": "development"
     },
     {
-      "id": 4,
+      "id": 3,
       "heading": "Family Time",
       "content": "More time with your family doing the things you love best.",
       "iconClass": "ti-headphone-alt",
@@ -112,21 +104,20 @@ class PromoSection extends React.Component {
     return (
       <div>
         {/* start promo section */}
-        <section className="promo-section ptb-90">
+        <section className="promo-section ptb-40">
           <div className="promo-section-wrap">
             <div className="container">
               <div className="row">
                 {this.state.data.map((item, idx) => {
                   return (
-                    <div key={`s_${idx}`} className="col-md-3 col-sm-6">
-                      <div className="bg-secondary single-promo-section text-center">
+                    <div key={`s_${idx}`} className="col-md-4 col-sm-12">
+                      <div className="bg-white single-promo-section text-center">
                         <div className="single-promo-content">
-                          {item.icon === 'health' && <MdFavoriteBorder size="30"></MdFavoriteBorder>}
-                          {item.icon === 'fight' && <MdSentimentSatisfied size="30" ></MdSentimentSatisfied>}
-                          {item.icon === 'development' && <BiRocket size="30" ></BiRocket>}
-                          {item.icon === 'clock' && <MdAccessTime size="30"></MdAccessTime>}
-                          <h6>{item.heading}</h6>
-                          <p>{item.content}</p>
+                          {item.icon === 'fight' && <MdSentimentSatisfied size="50" ></MdSentimentSatisfied>}
+                          {item.icon === 'development' && <BiRocket size="50" ></BiRocket>}
+                          {item.icon === 'clock' && <MdAccessTime size="50"></MdAccessTime>}
+                          <h5>{item.heading}</h5>
+                          <h6>{item.content}</h6>
                         </div>
                         <div className="line"></div>
                       </div>
@@ -137,33 +128,10 @@ class PromoSection extends React.Component {
             </div>
           </div>
         </section>
-        <section id="mission" className="faq-section ptb-90">
+        <section id="mission" className="faq-section">
         <div className="row">
             <div className="col-md-12">
                 <div className="section-heading">
-                      <p style={{maxWidth:"1000px", fontWeight:"normal", fontSize:"20px", textAlign: "center"}}>
-
-                        <h4 style={{maxWidth:"1000px", marginBottom: "15px"}}>{this.state.missionData.contentP1}</h4>
-                      </p>
-                      <div className="container">
-                        <div className="row">
-                          {this.state.goals.map((item, idx) => {
-                            return (
-                              <div key={`s_${idx}`} className="col-md-4 col-sm-6">
-                                <div className="bg-secondary single-promo-section text-center">
-                                  <div className="single-promo-content">
-                                    {item.icon === 'thumb' && <MdThumbUp size="30"></MdThumbUp>}
-                                    {item.icon === 'balance' && <FaBalanceScale size="30" ></FaBalanceScale>}
-                                    {item.icon === 'chart' && <BsFillBarChartFill size="30" ></BsFillBarChartFill>}
-                                    <h6>{item.heading}</h6>
-                                  </div>
-                                  <div className="line"></div>
-                                </div>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </div>
                       <p style={{maxWidth:"1000px", fontWeight:"normal", fontSize:"1.2rem", textAlign: "center", marginTop:"10px", marginBottom: "40px"}}>
                         <p style={{maxWidth:"1000px"}}>{this.state.missionData.contentP2}</p>
                         <p></p>

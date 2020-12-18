@@ -1120,13 +1120,34 @@ SECTION MARGIN
 /*hero new style*/
 .hero-content-wrap {
     display : table;
-    height  : 450px;
+    height  : 250px;
     width   : 100%;
+}
+
+.mailchimp-subscribe-wrap{
+    height  : 150px;
+    width   : 100%;
+}
+
+.mt-2 {
+    margin-top: .5rem!important;
+}
+
+.mb-2 {
+    margin-bottom: .5rem!important;
+}
+
+.mt-4 {
+    margin-top:1.5rem!important
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem!important;
 }
 
 .hero-content {
     position : relative;
-    display  : table-cell;
+    /*display  : table-cell;*/
     z-index  : 200;
 }
 
@@ -2076,6 +2097,9 @@ SECTION MARGIN
     transition         : all 0.3s ease-in;
     -webkit-box-shadow : 0 1px 2px rgba(212, 212, 212, 0.35);
     box-shadow         : 0 1px 2px rgba(212, 212, 212, 0.35);
+    border-color: #fcb316;
+    border-width: 1px;
+    border-style: solid;
 }
 
 .single-promo-section:hover {
@@ -2091,6 +2115,21 @@ SECTION MARGIN
 
 .single-promo-content {
     padding : 25px 25px 0;
+    fill:#fcb316;
+}
+
+.single-promo-content > svg{
+    color:#fcb316;
+}
+
+
+.single-promo-content > h5{
+    color:#173849;
+}
+
+
+.single-promo-content > h6{
+    color:#173849;
 }
 
 .single-promo-content span {
@@ -2116,7 +2155,7 @@ SECTION MARGIN
     height             : 2px;
     background         : #6541c1;
     /*background         : linear-gradient(150deg, #79aaad 15%, #7b8e9d 70%, #848282 94%);*/
-    background-color: #79aaad;
+    background-color: #fcb316;
     filter             : progid:DXImageTransform.Microsoft.gradient(startColorstr='#6541c1', endColorstr='#d43396', GradientType=1);
     -webkit-transform  : scale(0);
     transform          : scale(0);
