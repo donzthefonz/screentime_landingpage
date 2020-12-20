@@ -31,12 +31,11 @@ class ThemeFour extends Component{
                         <HeroSection />
                         <PromoSection />
                         <Feature />
-                        <VideoSection imageData={"/img/bg-wave-sym.png"} />
-                        <Pricing />
-                        <Testimonial />
+                        {/*<Pricing />*/}
+                        {/*<Testimonial />*/}
                         <Faq />
-                        <Download />
-                        <Blog />
+                        {/*<Download />*/}
+                        {/*<Blog />*/}
                         <Contact />
                         <Footer />
                     </div>

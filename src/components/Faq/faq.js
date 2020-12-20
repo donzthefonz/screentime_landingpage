@@ -5,8 +5,8 @@ const BASE_URL = "https://my-json-server.typicode.com/lhmisho/jsonserver/themeOn
 
 
 const data = {
-    "heading": "Faq's",
-    "content": "Some commonly asked questions. If something isn't here and you're curious, please get in touch!",
+    "heading": "FAQ's",
+    "content": "Some commonly asked questions. If something isn't here and you're curious - please get in touch!",
     "image": "/img/faq-right.png",
     "data": [
       {
@@ -62,7 +62,7 @@ class Faq extends Component{
             <div className="faq-section-wrap">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-6 col-md-offset-3">
                             <div className="section-heading">
                                 <h3>{this.state.initData.heading}</h3>
                                 <p>{this.state.initData.content}</p>
@@ -89,11 +89,6 @@ class Faq extends Component{
                                 })}
                                 
                                 {/* End Single Item */}
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="faq-img">
-                                <img src={this.state.initData.image} className="img-responsive" alt="" />
                             </div>
                         </div>
                     </div>

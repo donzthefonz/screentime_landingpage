@@ -27,9 +27,9 @@ const Header = () => {
                             <div className="navbar-collapse collapse" id="myNavbar">
                                 <ul className="nav navbar-nav navbar-right">
                                     <li className="active"><a className="page-scroll" href="#hero">Home</a></li>
-                                    <li><a className="page-scroll" href="#mission">Mission</a></li>
+                                    <li><a className="page-scroll" href="#mission">About</a></li>
                                     <li><a className="page-scroll" href="#features">Features</a></li>
-                                    <li><a className="page-scroll" href="#pricing">Pricing</a></li>
+                                    {/*<li><a className="page-scroll" href="#pricing">Pricing</a></li>*/}
                                     <li><a className="page-scroll" href="#faqs">Faq</a></li>
                                     {/* <li><a className="page-scroll" href="#news">News</a></li> */}
                                     <li><a className="page-scroll" href="#contact">Contact</a></li>

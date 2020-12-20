@@ -6,12 +6,6 @@ import Mailchimp          from 'react-mailchimp-form';
 const url = 'https://gmail.us2.list-manage.com/subscribe/post?u=5f3611d15bda0115be9f88bd4&amp;id=9bcf244908';
 const SimpleForm = () => <MailchimpSubscribe url={url}/>;
 
-let bg = '/img/hero-section-bg-2.jpg';
-let bgCss = 'no-repeat center center / cover';
-let bgStyle = {
-  background: 'url(' + bg + ')' + bgCss,
-};
-
 let initData = {
   heading         : 'ApeTech Provide -',
   content         :
@@ -56,28 +50,26 @@ class HeroSection extends React.Component {
   }
 
   render() {
-    return (
+    let isMobile = window.matchMedia("(max-width: 600px)").matches
+    let buttonText = isMobile ? 'GO' : 'GET EARLY ACCESS!'
+      return (
         <div>
           <section id="hero"
                    className="section-lg section-hero hero-slider-section-one"
-                   style={bgStyle}>
+                   >
             <div className="container">
-              <div className="row">
+              <div className="row" >
                 <div className="col-md-6">
-                  <div className="hero-content-wrap ">
-                    <div className="hero-content typed-strings mt-4">
+                  <div className="hero-content-wrap">
+                    <div className="hero-content typed-strings">
                       {/*<img src={"/img/parengo_logo.png"} alt="logo" style={{maxWidth: '400px'}}/>*/}
-                      <h1> Parenting just got easier.</h1>
+                      <h2> Parenting just got easier.</h2>
                       <p>
                         Manage your child’s screen time and incentivise positive
                         behaviour. Like a parental control app,
                         but <u>better</u>!
                       </p>
 
-                      <h4 style={{paddingBottom: 0, color: 'white'}}
-                          className="mt-4">
-                        {/*  Get early access.*/}
-                      </h4>
 
                       {/*<div className="slider-action-btn">*/}
                       {/*      {this.state.sliderData.map((item, idx) => {*/}
@@ -98,43 +90,52 @@ class HeroSection extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="row">
-                <div className="col-md-12">
+              <div className="row" >
+                <div className="col-md-12 hero-content">
+                  {isMobile ? (
+                      <h1 style={{color: 'white', paddingBottom: 0}} className="mt-4 text-center">
+                        Sign up for early access!
+                      </h1>
+                  ) : (<div/>)}
                   <div className="mailchimp-subscribe-wrap">
-                  <Mailchimp
-                      action={url}
+                    <Mailchimp
+                        action={url}
 
-                      //Adding multiple fields:
-                      fields={[
-                        {
-                          name       : 'EMAIL',
-                          placeholder: 'Enter your email',
-                          type       : 'email',
-                          required   : true,
-                        },
-                      ]}
-                      // Change predetermined language
-                      messages={
-                        {
-                          sending  : 'Sending...',
-                          success  : 'You\'ve subscribed!',
-                          error    : 'An unexpected internal error has occurred.',
-                          empty    : 'You must enter an e-mail address.',
-                          duplicate: 'You\'ve already subscribed.',
-                          button   : 'GET EARLY ACCESS!',
+                        //Adding multiple fields:
+                        fields={[
+                          {
+                            name       : 'EMAIL',
+                            placeholder: 'Enter your email',
+                            type       : 'email',
+                            required   : true,
+                          },
+                        ]}
+                        // Change predetermined language
+                        messages={
+                          {
+                            sending  : 'Sending...',
+                            success  : 'You\'ve subscribed!',
+                            error    : 'An unexpected internal error has occurred.',
+                            empty    : 'You must enter an e-mail address.',
+                            duplicate: 'You\'ve already subscribed.',
+                            button   : buttonText,
+                          }
                         }
-                      }
-                      // Add a personalized class
-                      className='subscribeForm'
-                  />
-                </div>
+                        // Add a personalized class
+                        className='subscribeForm'
+                    />
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="section-shape">
-              <img src={this.state.initData.actionShapeImage} alt=""/>
-            </div>
+<div className="new-section-shape">
+  <img src={this.state.initData.actionShapeImage} alt=""/>
+
+</div>
+            {/*<div className="section-shape">*/}
+            {/*  <img src={this.state.initData.actionShapeImage} alt=""/>*/}
+            {/*</div>*/}
           </section>
         </div>
     );

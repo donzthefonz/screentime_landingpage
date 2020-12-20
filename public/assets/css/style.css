@@ -172,9 +172,9 @@ b, strong {
 /*custom-btn*/
 .softo-btn-outline {
     padding            : 5px 30px;
-    border             : 2px solid #4992b3;
+    border             : 2px solid #79aaad;
     background-color   : transparent;
-    color              : #4992b3;
+    color              : #79aaad;
     font               : 600 14px/30px 'Montserrat', sans-serif;
     -webkit-transition : all .3s ease-out;
     transition         : all .3s ease-out;
@@ -182,8 +182,8 @@ b, strong {
 }
 
 .softo-btn-outline:hover {
-    border            : 2px solid #4992b3;
-    background-color  : #4992b3;
+    border            : 2px solid #79aaad;
+    background-color  : #79aaad;
     color             : #fff;
     text-decoration   : none;
     -webkit-transform : translateY(-2px);
@@ -192,8 +192,8 @@ b, strong {
 
 .softo-solid-btn {
     padding            : 5px 30px;
-    border             : 2px solid #4992b3;
-    background-color   : #4992b3;
+    border             : 2px solid #79aaad;
+    background-color   : #79aaad;
     color              : #fff;
     font               : 600 14px/30px 'Montserrat', sans-serif;
     -webkit-transition : all .3s ease-out;
@@ -202,7 +202,7 @@ b, strong {
 }
 
 .softo-solid-btn:hover {
-    border            : 2px solid #4992b3;
+    border            : 2px solid #79aaad;
     background        : transparent;
     color             : #000;
     text-decoration   : none;
@@ -251,7 +251,7 @@ ul {
 
 /*link*/
 a {
-    color           : #4992b3;
+    color           : #79aaad;
     text-decoration : none;
     transition      : all 0.3s ease;
 }
@@ -289,7 +289,7 @@ img {
     font-size      : 16px;
     line-height    : 18px;
     padding        : 10px 15px;
-    background     : #4992b3;
+    background     : #79aaad;
     font-weight    : 500;
     text-transform : uppercase;
     color          : #fff;
@@ -315,7 +315,7 @@ img {
     left             : 0;
     height           : 2px;
     width            : 50px;
-    background-color : #4992b3;
+    background-color : #79aaad;
 }
 
 /*section bg*/
@@ -328,7 +328,7 @@ img {
 }
 
 .bg-color {
-    background : #4992b3 !important;
+    background : #79aaad !important;
 }
 
 /*text color*/
@@ -337,7 +337,7 @@ img {
 }
 
 .color-text {
-    color : #4992b3 !important;
+    color : #79aaad !important;
 }
 
 .gray-text {
@@ -957,8 +957,8 @@ SECTION MARGIN
 ============================================================*/
 
 .navbar {
-    border-bottom    : 1px solid #4992b3;
-    background-color : #4992b3;
+    border-bottom    : 1px solid #79aaad;
+    background-color : #79aaad;
 }
 
 .navbar .nav.navbar-nav {
@@ -969,7 +969,8 @@ SECTION MARGIN
 }
 
 .navbar .navbar-collapse {
-    border-top : 1px solid #4992b3;
+    border-top : 1px solid #79aaad;
+    padding-right: 2rem;
 }
 
 /* Logo */
@@ -980,6 +981,7 @@ SECTION MARGIN
 
 /* Menu links */
 .navbar .nav.navbar-nav li a {
+    text-align: right;
     color   : #fff;
     padding : 22px 15px;
 }
@@ -1005,14 +1007,14 @@ SECTION MARGIN
 .navbar .navbar-toggle:hover .icon-bar,
 .navbar .navbar-toggle:active .icon-bar,
 .navbar .navbar-toggle.collapsed:active .icon-bar {
-    background-color : #4992b3;
+    background-color : #79aaad;
 }
 
 /* end of mobile menu toggle button - pressed */
 
 /* Mobile menu toggle button */
 .navbar .navbar-toggle.collapsed {
-    border     : 1px solid #4992b3;
+    border     : 1px solid #79aaad;
     background : transparent;
 }
 
@@ -1120,12 +1122,11 @@ SECTION MARGIN
 /*hero new style*/
 .hero-content-wrap {
     display : table;
-    height  : 250px;
     width   : 100%;
+    margin-top: 3rem;
 }
 
 .mailchimp-subscribe-wrap{
-    height  : 150px;
     width   : 100%;
 }
 
@@ -1147,7 +1148,6 @@ SECTION MARGIN
 
 .hero-content {
     position : relative;
-    /*display  : table-cell;*/
     z-index  : 200;
 }
 
@@ -1191,7 +1191,7 @@ SECTION MARGIN
 
 .white-indicator.owl-theme .owl-nav [class*=owl-]:hover {
     background : rgba(249, 249, 249, 0.21);
-    color      : #4992b3;
+    color      : #79aaad;
 }
 
 .white-indicator .owl-nav button span {
@@ -1233,7 +1233,20 @@ SECTION MARGIN
 
     .section-lg {
         padding-top    : 6rem;
-        padding-bottom : 6rem;
+    }
+
+    .section-circle {
+        position : relative
+    }
+}
+
+@media (max-width : 768px) {
+    .section-hero {
+        min-height : 500px;
+    }
+
+    .section-lg {
+        padding-top    : 6rem;
     }
 
     .section-circle {
@@ -1612,7 +1625,7 @@ SECTION MARGIN
 }
 
 .slider-action-btn a.video:hover span {
-    background : #4992b3;
+    background : #79aaad;
     color      : #fff;
 }
 
@@ -1620,7 +1633,7 @@ SECTION MARGIN
     width              : 40px;
     height             : 40px;
     line-height        : 40px;
-    color              : #4992b3;
+    color              : #79aaad;
     border             : 2px solid #fff;
     background         : #fff;
     text-align         : center;
@@ -1691,6 +1704,19 @@ SECTION MARGIN
 }
 
 .section-shape img {
+    max-width : 100%;
+    min-width : 100%;
+    width     : 100%;
+}
+
+
+.new-section-shape {
+    left     : 0;
+    right    : 0;
+    margin-bottom: -10px;
+    padding-top: -6rem;
+}
+.new-section-shape img {
     max-width : 100%;
     min-width : 100%;
     width     : 100%;
@@ -1836,7 +1862,7 @@ SECTION MARGIN
 
 .hero-action-btn a.softo-solid-btn:hover {
     background   : #fff;
-    color        : #4992b3;
+    color        : #79aaad;
     border-color : #fff;
 
 }
@@ -1863,7 +1889,7 @@ SECTION MARGIN
 }
 
 .custom-indicator.owl-theme .owl-dots .owl-dot.active span, .custom-indicator.owl-theme .owl-dots .owl-dot:hover span {
-    background : #4992b3;
+    background : #79aaad;
 }
 
 .custom-indicator .owl-dots button:focus, .custom-indicator .owl-dots:active {
@@ -1915,7 +1941,7 @@ SECTION MARGIN
     line-height : 25px;
     margin      : 1px;
     color       : #fff;
-    background  : #4992b3;
+    background  : #79aaad;
 }
 
 .phone-carousel .owl-theme .owl-nav button.owl-next {
@@ -1927,12 +1953,12 @@ SECTION MARGIN
 }
 
 .phone-carousel .owl-theme .owl-nav button:hover {
-    background : #4992b3;
+    background : #79aaad;
 }
 
 .phone-carousel .owl-theme .owl-nav button:focus, .phone-carousel .owl-theme .owl-nav button:active {
     outline    : none;
-    background : #4992b3;
+    background : #79aaad;
     color      : #fff;
     border     : none;
 }
@@ -1999,18 +2025,18 @@ SECTION MARGIN
 }
 
 .slider-indicator ul li:focus, .slider-indicator ul li:hover {
-    color : #4992b3
+    color : #79aaad
 }
 
 .indicator-color ul li {
     background    : #f9f9f9;
-    color         : #4992b3;
+    color         : #79aaad;
     border-radius : 2px;
 }
 
 .indicator-color ul li:hover {
     color      : #fff;
-    background : #4992b3;
+    background : #79aaad;
 }
 
 .phone-carousel .phone .header-slider:before {
@@ -2073,7 +2099,7 @@ SECTION MARGIN
 }
 
 .higlight-text p strong {
-    background    : #4992b3;
+    background    : #79aaad;
     color         : #fff;
     padding       : 0 8px;
     border-radius : 30px;
@@ -2259,7 +2285,7 @@ SECTION MARGIN
 .video-play-button a {
     position           : relative;
     z-index            : 2;
-    color              : #4992b3;
+    color              : #79aaad;
     height             : 70px;
     width              : 70px;
     line-height        : 70px;
@@ -2274,7 +2300,7 @@ SECTION MARGIN
 }
 
 .video-play-button a:hover {
-    background : #4992b3;
+    background : #79aaad;
     color      : #fff;
 }
 
@@ -2284,7 +2310,7 @@ SECTION MARGIN
 
 .video-play-button a span {
     font-size      : 40px;
-    color          : #4992b3;
+    color          : #79aaad;
     text-align     : center;
     vertical-align : middle;
     padding-left   : 5px;
@@ -2570,7 +2596,7 @@ SECTION MARGIN
 }
 
 .biz-home-single-service-two:hover .service-style-two span, .biz-home-single-service-two:hover .service-style-two h5 {
-    color : #4992b3;
+    color : #79aaad;
 }
 
 .service-style-one {
@@ -2613,7 +2639,7 @@ SECTION MARGIN
 }
 
 .service-style-one span:before {
-    color      : #4992b3;
+    color      : #79aaad;
     transition : all 0.3s ease-in;
 }
 
@@ -2723,7 +2749,7 @@ SECTION MARGIN
 }
 
 .product-counter-section .counter-list li:nth-child(3n+1) .count {
-    color : #4992b3;
+    color : #79aaad;
 }
 
 .product-counter-section .counter-list li:nth-child(3n+2) .count {
@@ -3023,7 +3049,7 @@ SECTION MARGIN
 .testimonial-slider .owl-nav button span {
     font-size   : 18px;
     line-height : 18px;
-    color       : #4992b3;
+    color       : #79aaad;
 }
 
 /*============================================================
@@ -3209,7 +3235,7 @@ SECTION MARGIN
 }
 
 .download-app-button a:hover p, .download-btn.hover-active p {
-    color : #4992b3;
+    color : #79aaad;
 }
 
 .download-app-button a:hover span, .download-btn.hover-active span {
@@ -3318,7 +3344,7 @@ SECTION MARGIN
 }
 
 .blog-post-content-area h3 a:hover {
-    color : #4992b3;
+    color : #79aaad;
 }
 
 .blog-footer-area a {
@@ -3364,7 +3390,7 @@ SECTION MARGIN
 #sliderBlog .owl-nav button:focus, #sliderBlog .owl-nav button:hover {
     color      : #fff;
     outline    : none;
-    background : #4992b3;
+    background : #79aaad;
 }
 
 #sliderBlog .owl-nav button:focus span, #sliderBlog .owl-nav button:hover span {
@@ -3372,7 +3398,7 @@ SECTION MARGIN
 }
 
 #sliderBlog .owl-nav button span {
-    color       : #4992b3;
+    color       : #79aaad;
     font-size   : 18px;
     line-height : 18px;
 }
@@ -3419,7 +3445,7 @@ SECTION MARGIN
     font-size    : 14px;
     line-height  : 24px;
     color        : #000;
-    border-left  : 4px solid #4992b3;
+    border-left  : 4px solid #79aaad;
     padding-left : 20px;
     margin       : 40px 0;
 }
@@ -3474,7 +3500,7 @@ ul.blog-comments li a {
     padding       : 2px 10px;
     border-radius : 2px;
     color         : #fff;
-    background    : #4992b3;
+    background    : #79aaad;
 }
 
 ul.blog-comments li span {
@@ -3510,7 +3536,7 @@ ul.blog-comments li p {
 
 .comment-input-field:focus, .comment-form textarea:focus {
     outline      : none;
-    border-color : #4992b3;
+    border-color : #79aaad;
 }
 
 .comment-form textarea {
@@ -3536,7 +3562,7 @@ ul.blog-comments li p {
 }
 
 .footer-address ul li i {
-    color        : #4992b3;
+    color        : #79aaad;
     margin-right : 5px;
 }
 
@@ -3550,7 +3576,7 @@ ul.blog-comments li p {
 }
 
 .contact-us-form .form-group .form-control:focus {
-    border-color : #4992b3;
+    border-color : #79aaad;
 }
 
 
@@ -3650,7 +3676,7 @@ ul.blog-comments li p {
     margin            : -75px 0 0 -75px;
     border-radius     : 50%;
     border            : 3px solid transparent;
-    border-top-color  : #4992b3;
+    border-top-color  : #79aaad;
     -webkit-animation : spin 2s linear infinite;
     animation         : spin 2s linear infinite;
 }
@@ -3737,7 +3763,7 @@ ul.blog-comments li p {
 #toTop span {
     display           : block;
     position          : relative;
-    background        : #4992b3;
+    background        : #79aaad;
     padding           : 5px 12px;
     -webkit-transform : rotate(180deg);
     -moz-transform    : rotate(180deg);

@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import ContactForm from './contactfrom'
-import axios from 'axios'
-import MailchimpSubscribe from "react-mailchimp-subscribe"
+import ContactForm          from './contactfrom'
+import axios                from 'axios'
+import MailchimpSubscribe   from "react-mailchimp-subscribe"
+import Mailchimp            from 'react-mailchimp-form';
 const url = "https://gmail.us2.list-manage.com/subscribe/post?u=5f3611d15bda0115be9f88bd4&amp;id=9bcf244908";
 const SimpleForm = () => <MailchimpSubscribe url={url}/>
 
@@ -12,7 +13,7 @@ const data = {
     "branch": "Head Office",
     "address": "Glasgow, UK",
     "contact": "+61 2 8376 6284",
-    "email": "brobanapp@gmail.com",
+    "email": "hello@parengo.app",
     "phone": "07"
   };
 
@@ -105,13 +106,41 @@ class Contact extends Component {
                                 <div className="footer-address text-center">
                                     {/* <h6>{this.state.data.branch}</h6>
                                     <p>{this.state.data.address}</p> */}
-                                    <ul style={{marginBottom:"40px"}}>
-                                        <SimpleForm></SimpleForm>
-                                    </ul>
+                                  <div className="mailchimp-subscribe-wrap">
+                                    <Mailchimp
+                                        action={url}
+
+                                        //Adding multiple fields:
+                                        fields={[
+                                          {
+                                            name       : 'EMAIL',
+                                            placeholder: 'Enter your email',
+                                            type       : 'email',
+                                            required   : true,
+                                          },
+                                        ]}
+                                        // Change predetermined language
+                                        messages={
+                                          {
+                                            sending  : 'Sending...',
+                                            success  : 'You\'ve subscribed!',
+                                            error    : 'An unexpected internal error has occurred.',
+                                            empty    : 'You must enter an e-mail address.',
+                                            duplicate: 'You\'ve already subscribed.',
+                                            button   : 'Subscribe',
+                                          }
+                                        }
+                                        // Add a personalized class
+                                        className='subscribeForm'
+                                    />
+                                  </div>
+                                    {/*<ul style={{marginBottom:"40px"}}>*/}
+                                    {/*    <SimpleForm></SimpleForm>*/}
+                                    {/*</ul>*/}
                                     <ul>
                                         {/* <li><i className="fa fa-phone"></i> <span>Phone: {this.state.data.phone}</span></li> */}
                                         <li><i style={{marginBottom:"40px"}} className="fa fa-envelope-o"></i> <span>Email : <a
-                                            href="mailto:brobanapp@gmail.com">{this.state.data.email}</a></span>
+                                            href="mailto:hello@parengo.app">{this.state.data.email}</a></span>
                                         </li>
                                     </ul>
                                 </div>
