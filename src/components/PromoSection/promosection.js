@@ -157,7 +157,7 @@ class PromoSection extends React.Component {
               <div
                   className="col-md-6 col-sm-12 col-md-offset-3 col-sm-offset-0">
                 <div className="text-center">
-                <h4>{this.state.missionData.contentP1}</h4>
+                  <h4>{this.state.missionData.contentP1}</h4>
                 </div>
                 <div style={{
                   maxWidth : '1000px', fontWeight: 'normal', fontSize: '1.2rem',
@@ -170,7 +170,66 @@ class PromoSection extends React.Component {
                   <p style={{maxWidth: '1000px'}}
                      className="mt-2">{this.state.missionData.contentP4}</p>
                   <p style={{maxWidth: '1000px'}}
-                     className="mt-2">However, <b>not all screen time is equal</b>. Parengo is able to distinguish and allow content which is educational so your child can do their homework, research and stay curious about the world!</p>
+                     className="mt-2">However, <b>not all screen time is
+                    equal</b>. Parengo is able to distinguish and allow content
+                    which is educational so your child can do their homework,
+                    research and stay curious about the world!</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div
+                  className="col-md-6 col-sm-12 col-md-offset-3 col-sm-offset-0">
+                <div className="text-center mb-4 mt-4">
+                  <h4>Parengo platform follows these 4 simple steps</h4>
+                </div>
+              </div>
+            </div>
+            <div className="promo-section-wrap mb-4">
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-3 col-sm-6">
+                    <div
+                        className="bg-white single-promo-section text-center steps-boxes">
+                      <div className="single-promo-content steps-boxes-content">
+                        <h1>1</h1>
+                        <h5>Parent sets a task for their child</h5>
+                      </div>
+                      <div className="line"></div>
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-6">
+                    <div
+                        className="bg-white single-promo-section text-center steps-boxes">
+                      <div className="single-promo-content steps-boxes-content">
+                        <h1>2</h1>
+                        <h5>Child completes a task</h5>
+                      </div>
+                      <div className="line"></div>
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-6">
+                    <div
+                        className="bg-white single-promo-section text-center steps-boxes">
+                      <div className="single-promo-content steps-boxes-content">
+                        <h1>3</h1>
+                        <h5>Child is awarded the minutes for their completed
+                          task</h5>
+                      </div>
+                      <div className="line"></div>
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-6">
+                    <div
+                        className="bg-white single-promo-section text-center steps-boxes">
+                      <div className="single-promo-content steps-boxes-content">
+                        <h1>4</h1>
+                        <h5>Child spends their earned minutes on screen time</h5>
+                      </div>
+                      <div className="line"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

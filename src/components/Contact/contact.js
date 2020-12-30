@@ -13,7 +13,7 @@ const data = {
     "branch": "Head Office",
     "address": "Glasgow, UK",
     "contact": "+61 2 8376 6284",
-    "email": "hello@parengo.app",
+    "email": "hello@parengo.co.uk",
     "phone": "07"
   };
 
