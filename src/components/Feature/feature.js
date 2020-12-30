@@ -24,7 +24,7 @@ const data = {
         "id": 2,
         "iconClass": "fa fa-dropbox",
         "heading": "Multiple Devices",
-        "content": "Support for TVs, Android, Windows PCs and games consoles. Support for more platforms coming soon.",
+        "content": "Support for TVs, Android devices, Windows PCs and games consoles. More platforms coming soon.",
         "icon": "device"
       },
       {
