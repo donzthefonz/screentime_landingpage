@@ -12,7 +12,7 @@ const data = {
       {
         "id": 1,
         "question": "Why can't I download the app?",
-        "answer": "We are currently in the closed beta stage. This means the app is not available to the public and you must be invited to be an early-access user. Leave us your email and you might get lucky."
+        "answer": "We are currently in the closed beta stage. This means the app is not available to the public and you must be invited to be an early-access user. Leave us your email and we'll be in touch with updates."
       },
       {
         "id": 2,
@@ -24,12 +24,12 @@ const data = {
       {
         "id": 3,
         "question": "What devices do you support?",
-        "answer": "At the moment we support Android, Windows Computers and games consoles such as PS4 and Xbox. With the new PS5 and Series X supported as well. We plan to support iPhone, iPad and other devices in the future. Get in touch to tell us what you'd like to see most!"
+        "answer": "Currently we support modern TVs, Android, Windows Computers and games consoles such as PS4 and Xbox as well as the new PS5 and Xbox Series X. We plan to support iPhone, iPad and other devices in the future. Get in touch to tell us what you'd like to see most!"
       },
       {
         "id": 4,
-        "question": "Do I have to pay extra for games console support?",
-        "answer": "Yes, in order to support games consoles within our platform there is a neccessary hardware component. We charge a one time £20 fee for the device."
+        "question": "Do I have to pay extra for games console or TV support?",
+        "answer": "Yes, in order to control the screen time of games consoles or TVs using our app you will need an additional external hardware component. This component costs £20 per device you wish to control."
       }
     ]
   }

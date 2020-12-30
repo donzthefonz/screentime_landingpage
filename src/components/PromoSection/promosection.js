@@ -66,7 +66,7 @@ const missionData = {
   'contentOL1': `One platform for managing your child’s screen time and incentivising positive behaviour.`,
   'contentOL2': `Like a parental control app, but better.`,
   'contentP1' : `Modern times require modern solutions.`,
-  'contentP2' : `We make it possible through a custom platform that helps to reduce time spent on digital devices.
+  'contentP2' : `We provide a custom platform that helps reduce time spent on digital devices.
     Children have a daily minutes allowance, set by you, that allows them to play games, scroll through social media, watch YouTube videos, etc.
     `,
   'contentP3' : `If they want more screen time, they must earn more minutes by completing tasks and developing habits. This gives you leverage to set goals for your child and have them directly incentivised towards them.`,
@@ -214,8 +214,7 @@ class PromoSection extends React.Component {
                         className="bg-white single-promo-section text-center steps-boxes">
                       <div className="single-promo-content steps-boxes-content">
                         <h1>3</h1>
-                        <h5>Child is awarded the minutes for their completed
-                          task</h5>
+                        <h5>Child is rewarded minutes for their completed task</h5>
                       </div>
                       <div className="line"></div>
                     </div>

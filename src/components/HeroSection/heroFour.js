@@ -129,10 +129,10 @@ class HeroSection extends React.Component {
               </div>
             </div>
 
-<div className="new-section-shape">
-  <img src={this.state.initData.actionShapeImage} alt=""/>
+            <div className="new-section-shape">
+              <img src={this.state.initData.actionShapeImage} alt=""/>
 
-</div>
+            </div>
             {/*<div className="section-shape">*/}
             {/*  <img src={this.state.initData.actionShapeImage} alt=""/>*/}
             {/*</div>*/}
