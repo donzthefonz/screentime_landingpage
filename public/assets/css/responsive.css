@@ -3,6 +3,23 @@
 
 /* Custom, iPhone Retina */
 @media screen and  (max-width: 320px) and (min-width: 0px) {
+    .hero-content-wrap {
+        margin-top: 0;
+    }
+
+    .single-promo-content {
+        padding: 0;
+    }
+
+    .steps-boxes {
+        height: auto;
+    }
+    .feature-image > img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        object-position: 0 0;
+    }
     /*hero slider*/
     .hero-content h1{
         font-size: 25px;
@@ -83,6 +100,23 @@
 
 /* Custom, iPhone Retina */
 @media screen and (max-width: 360px) and (min-width: 321px) {
+    .hero-content-wrap {
+        margin-top: 0;
+    }
+
+    .single-promo-content {
+        padding: 0;
+    }
+
+    .steps-boxes {
+        height: auto;
+    }
+    .feature-image > img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        object-position: 0 0;
+    }
     /*hero slider*/
     .hero-content h1{
         font-size: 25px;
@@ -162,7 +196,30 @@
 
 /* Custom, iPhone Retina */
 @media screen and (max-width: 375px) and (min-width: 361px) {
+    .hero-content-wrap {
+        margin-top: 0;
+    }
+
+    .single-promo-content {
+        padding: 0;
+    }
+
+    .steps-boxes {
+        height: 242px;
+    }
+
+    .feature-image > img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        object-position: 0 0;
+    }
+
     /*hero slider*/
+    .hero-content-wrap {
+        margin-top: 0;
+    }
+
     .hero-content h1{
         font-size: 25px;
         line-height: 27px;
@@ -241,6 +298,24 @@
 
 /* Extra Small Devices, Phones */
 @media screen and (max-width: 414px) and (min-width: 376px) {
+    .hero-content-wrap {
+        margin-top: 0;
+    }
+
+    .single-promo-content {
+        padding: 0;
+    }
+
+    .steps-boxes {
+        height: 220px;
+    }
+
+    .feature-image > img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        object-position: 0 0;
+    }
 
     /*hero slider*/
     .hero-content h1{
@@ -311,6 +386,25 @@
 
 /* Extra Small Devices, Phones */
 @media screen and (max-width: 480px) and (min-width: 415px) {
+    .hero-content-wrap {
+        margin-top: 0;
+    }
+
+    .single-promo-content {
+        padding: 0;
+    }
+
+    .steps-boxes {
+        height: auto;
+    }
+
+    .feature-image > img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        object-position: 0 0;
+    }
+
     /*hero slider*/
     .hero-content h1{
         font-size: 30px;
@@ -382,6 +476,25 @@
 /* Extra Small Devices, Phones */
 @media screen and (max-width: 568px) and (min-width: 481px) {
     /*hero slider*/
+    .hero-content-wrap {
+        margin-top: 0;
+    }
+
+    .single-promo-content {
+        padding: 0;
+    }
+
+    .steps-boxes {
+        height: 182px;
+    }
+
+    .feature-image > img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        object-position: 0 0;
+    }
+
     .hero-content h1{
         font-size: 30px;
         line-height: 35px;
@@ -452,6 +565,25 @@
 /* Extra Small Devices, Phones */
 @media screen and (max-width: 640px) and (min-width: 569px) {
     /*hero slider*/
+    .hero-content-wrap {
+        margin-top: 0;
+    }
+
+    .single-promo-content {
+        padding: 0;
+    }
+
+    .steps-boxes {
+        height: 182px;
+    }
+
+    .feature-image > img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        object-position: 0 0;
+    }
+
     .hero-content h1{
         font-size: 35px;
         line-height: 40px;
@@ -522,6 +654,25 @@
 /* Small Devices, Tablets */
 @media screen and (max-width: 720px) and (min-width: 641px) {
     /*hero slider*/
+    .hero-content-wrap {
+        margin-top: 0;
+    }
+
+    .single-promo-content {
+        padding: 0;
+    }
+
+    .steps-boxes {
+        height: 182px;
+    }
+
+    .feature-image > img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        object-position: 0 0;
+    }
+
     .hero-content h1{
         font-size: 35px;
         line-height: 40px;

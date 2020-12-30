@@ -30,7 +30,7 @@ const Header = () => {
                                     <li><a className="page-scroll" href="#mission">About</a></li>
                                     <li><a className="page-scroll" href="#features">Features</a></li>
                                     {/*<li><a className="page-scroll" href="#pricing">Pricing</a></li>*/}
-                                    <li><a className="page-scroll" href="#faqs">Faq</a></li>
+                                    <li><a className="page-scroll" href="#faqs">FAQ</a></li>
                                     {/* <li><a className="page-scroll" href="#news">News</a></li> */}
                                     <li><a className="page-scroll" href="#contact">Contact</a></li>
                                 </ul>
