@@ -10,7 +10,7 @@ const BASE_URL = "https://my-json-server.typicode.com/lhmisho/jsonserver/themeOn
 const data = {
     "content": "The parenting app that let's you limit screen time and incentivise good behaviour for your child. Equips you with the tools to help you, help them.",
     "heading": "Features",
-    "image": "/img/parengo_ios_home.png",
+    "image": "/img/parengo_ios_home_large.png",
     "featureDataOne": [
       {
         "id": 1,
@@ -127,9 +127,9 @@ class Feature extends React.Component{
                                 })}
                                 {/* feature single end */}
                             </div>
-                            <div className="col-md-4 hidden-sm hidden-xs">
+                            <div className="col-md-4 ">
                                 <div className="feature-image img-responsive center-block align-items-center">
-                                    <img src={this.state.data.image} className="pos-hcenter img-responsive" alt="" />
+                                    <img style={{ margin: '0 auto'}} src={this.state.data.image} className="pos-hcenter img-responsive" alt="" />
                                 </div>
                             </div>
                             <div className="col-md-4 col-sm-6">
@@ -157,6 +157,11 @@ class Feature extends React.Component{
                                 })}
                                 {/* feature single end */}
                             </div>
+                          {/*<div className="col-sm-12 col-xs-12 hidden-xl hidden-md">*/}
+                          {/*  <div className="feature-image img-responsive center-block align-items-center">*/}
+                          {/*    <img src={this.state.data.image} className="pos-hcenter img-responsive" alt="" />*/}
+                          {/*  </div>*/}
+                          {/*</div>*/}
                         </div>
     
                     </div>

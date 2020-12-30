@@ -186,10 +186,10 @@ class PromoSection extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="promo-section-wrap mb-4">
+            <div className="promo-section-wrap mb-4 mt-4">
               <div className="container">
                 <div className="row">
-                  <div className="col-md-3 col-sm-6">
+                  <div className="col-md-3 col-sm-6 col-xs-6">
                     <div
                         className="bg-white single-promo-section text-center steps-boxes">
                       <div className="single-promo-content steps-boxes-content">
@@ -199,7 +199,7 @@ class PromoSection extends React.Component {
                       <div className="line"></div>
                     </div>
                   </div>
-                  <div className="col-md-3 col-sm-6">
+                  <div className="col-md-3 col-sm-6 col-xs-6">
                     <div
                         className="bg-white single-promo-section text-center steps-boxes">
                       <div className="single-promo-content steps-boxes-content">
@@ -209,17 +209,17 @@ class PromoSection extends React.Component {
                       <div className="line"></div>
                     </div>
                   </div>
-                  <div className="col-md-3 col-sm-6">
+                  <div className="col-md-3 col-sm-6 col-xs-6">
                     <div
                         className="bg-white single-promo-section text-center steps-boxes">
                       <div className="single-promo-content steps-boxes-content">
                         <h1>3</h1>
-                        <h5>Child is rewarded minutes for their completed task</h5>
+                        <h5>Child is rewarded minutes</h5>
                       </div>
                       <div className="line"></div>
                     </div>
                   </div>
-                  <div className="col-md-3 col-sm-6">
+                  <div className="col-md-3 col-sm-6 col-xs-6">
                     <div
                         className="bg-white single-promo-section text-center steps-boxes">
                       <div className="single-promo-content steps-boxes-content">
