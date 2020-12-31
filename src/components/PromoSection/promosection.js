@@ -156,7 +156,7 @@ class PromoSection extends React.Component {
             <div className="row">
               <div
                   className="col-md-6 col-sm-12 col-md-offset-3 col-sm-offset-0">
-                <div className="text-center">
+                <div className="text-center feature-title">
                   <h4>{this.state.missionData.contentP1}</h4>
                 </div>
                 <div style={{
@@ -181,7 +181,7 @@ class PromoSection extends React.Component {
             <div className="row">
               <div
                   className="col-md-6 col-sm-12 col-md-offset-3 col-sm-offset-0">
-                <div className="text-center mb-4 mt-4">
+                <div className="text-center mb-4 mt-4 feature-title">
                   <h4>Parengo platform follows these 4 simple steps</h4>
                 </div>
               </div>

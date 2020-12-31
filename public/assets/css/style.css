@@ -2116,6 +2116,11 @@ SECTION MARGIN
     height: 267px;
 }
 
+.feature-title {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .steps-boxes-content > h1 {
     color: #fcb316 !important;
 }
